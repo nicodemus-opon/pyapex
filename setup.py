@@ -16,7 +16,7 @@ setup(
 
     url='https://github.com/nicodemus-opon/pyapex',
 
-    download_url='https://github.com/nicodemus-opon/pyapex/archive/refs/tags/v_0.0.1.tar.gz',
+    download_url='https://github.com/nicodemus-opon/pyapex/archive/refs/tags/v_0.0.2.tar.gz',
     keywords=['chart', 'plotting'],
     install_requires=[
         'uuid'

@@ -97,7 +97,7 @@ class Chart:
             template = tempf.read()
             fout = template.replace("{options}", cv)
 
-        self.filename = "html/"+str(uuid.uuid4())+".html"
+        self.filename = os.getcwd()+"/html/"+str(uuid.uuid4())+".html"
         with open(self.filename, "w") as tempo:
             tempo.write(fout)
         if(sys.platform.startswith('win')):
@@ -107,7 +107,7 @@ class Chart:
         os.system(cmd)
 
     def purge(self):
-        dir_name = "html/"
+        dir_name = os.getcwd()+"/html/"
         test = os.listdir(dir_name)
 
         for item in test:
