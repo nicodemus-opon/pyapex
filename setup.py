@@ -1,25 +1,29 @@
-from distutils.core import setup
+from setuptools import setup
+with open('README.md',"r") as f:
+    long_description = f.read()
 setup(
     name='pyapex',
     packages=['pyapex'],
-    version='0.0.1',
+    version='0.0.2',
 
     license='MIT',
 
     description='Create interactive html charts',
+    long_description=long_description,
+    long_description_content_type='text/markdown',  
     author='nicodemus opon',
     author_email='hello@nicopon.me',
 
-    url='https://github.com/nicodemus_opon/pyapex',
+    url='https://github.com/nicodemus-opon/pyapex',
 
-    download_url='https://github.com/user/reponame/archive/v_01.tar.gz',
+    download_url='https://github.com/nicodemus-opon/pyapex/archive/refs/tags/v_0.0.1.tar.gz',
     keywords=['chart', 'plotting'],
     install_requires=[
         'uuid'
     ],
     classifiers=[
 
-        'Development Status :: 3 - Beta',
+        'Development Status :: 4 - Beta',
 
         'Intended Audience :: Science/Research',
         'Topic :: Scientific/Engineering :: Visualization',
