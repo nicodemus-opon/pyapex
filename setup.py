@@ -4,7 +4,7 @@ with open('README.md',"r") as f:
 setup(
     name='pyapex',
     packages=['pyapex'],
-    version='0.0.2',
+    version='0.0.3',
 
     license='MIT',
 
@@ -16,7 +16,7 @@ setup(
 
     url='https://github.com/nicodemus-opon/pyapex',
 
-    download_url='https://github.com/nicodemus-opon/pyapex/archive/refs/tags/v_0.0.2.tar.gz',
+    download_url='https://github.com/nicodemus-opon/pyapex/archive/refs/tags/v_0.0.3.tar.gz',
     keywords=['chart', 'plotting'],
     install_requires=[
         'uuid'

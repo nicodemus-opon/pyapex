@@ -16,6 +16,7 @@ def merge_two_dicts(x, y):
 
 class Chart:
     def __init__(self, type):
+        self.path=os.path.dirname(os.path.realpath(__file__))
         self.purge()
         self.config = {}
         self.config["chart"] = {}
@@ -93,11 +94,12 @@ class Chart:
     def show(self):
         '''open html file in browser'''
         cv = str(json.dumps(self.config))
-        with open("template.html", "r") as tempf:
+        tf=self.path+"/template.html"
+        with open(tf, "r") as tempf:
             template = tempf.read()
             fout = template.replace("{options}", cv)
 
-        self.filename = os.getcwd()+"/html/"+str(uuid.uuid4())+".html"
+        self.filename = self.path+"/html/"+str(uuid.uuid4())+".html"
         with open(self.filename, "w") as tempo:
             tempo.write(fout)
         if(sys.platform.startswith('win')):
@@ -107,7 +109,7 @@ class Chart:
         os.system(cmd)
 
     def purge(self):
-        dir_name = os.getcwd()+"/html/"
+        dir_name = self.path+"/html/"
         test = os.listdir(dir_name)
 
         for item in test:

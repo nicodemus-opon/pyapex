@@ -1,0 +1,2 @@
+include pyapex/template.html
+recursive-include pyapex/html *
