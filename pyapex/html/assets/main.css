@@ -1,0 +1,21 @@
+#chart {
+    max-width: 80vw;
+    margin: 35px auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 22px 35px -16px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+}
+
+body {
+    height: 100vh;
+    background: #f9f9f9;
+}
+
+#chartb {
+    height: 50%;
+    width: 100%;
+}
