@@ -6,7 +6,7 @@ installation
     pip install pyapex
 usage
 
-```
+```python
 from pyapex import  Chart
 
 plt  =  Chart(type="candlestick")
